@@ -1,7 +1,0 @@
-.main .chatbox>.contents>.chat_messages>ul>li>div>.right>.files>div>ul>li>.url_meta>.details>.title {
-    font-weight: 600;
-    color: var(--chat-window-octonary-text-color);
-    max-height: 60px;
-    overflow: hidden;
-    display: block;
-}

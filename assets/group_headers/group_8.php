@@ -1,1 +1,0 @@
-If you are experencing technical issues, please provide a description of the issue with screen shots, so we can identify the issue.
