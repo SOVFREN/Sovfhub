@@ -1,0 +1,1 @@
+This group is about natural healing remedies 

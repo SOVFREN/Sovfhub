@@ -1,0 +1,1 @@
+document.querySelector("body > section > div > div > div > div.side_navigation.boundary > div.bottom.has_child.side_navigation_footer.show > div.child_menu > ul > li:nth-child(5)").style.display = "none";

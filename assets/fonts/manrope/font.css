@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('manrope-medium.woff') format('woff'),
+    url('manrope-medium.svg#manrope-medium') format('svg'),
+    url('manrope-medium.eot'),
+    url('manrope-medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('manrope-semibold.woff') format('woff'),
+    url('manrope-semibold.svg#manrope-semibold') format('svg'),
+    url('manrope-semibold.eot'),
+    url('manrope-semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('manrope-bold.woff') format('woff'),
+    url('manrope-bold.svg#manrope-bold') format('svg'),
+    url('manrope-bold.eot'),
+    url('manrope-bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Manrope';
+}

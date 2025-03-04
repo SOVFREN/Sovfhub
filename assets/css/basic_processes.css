@@ -1,0 +1,313 @@
+body
+{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 0;
+background-color: #171f30;
+background: linear-gradient(-45deg, #8BC34A, #8BC34A, #23a6d5, #23d5ab);
+background: linear-gradient(45deg, #FF3CAC, #784BA0, #2B86C5);
+background-size: 400% 400%;
+animation: gradient 3s ease infinite;
+overflow: hidden;
+}
+
+.body_content
+{
+display: none;
+font-family: 'Roboto', sans-serif;
+}
+
+.body_content.container
+{
+text-align: center;
+}
+
+.body_content .animated
+{
+font-size: 80px;
+margin-bottom: 0px;
+color: white;
+position: relative;
+display: inline-block;
+animation: textAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes textAnimation
+{
+0%
+{
+transform: translateY(0);
+}
+
+50%
+{
+transform: translateY(-20px);
+}
+
+100%
+{
+transform: translateY(0);
+}
+}
+
+.body_content p
+{
+color: #FFFFFF;
+font-size: 24px;
+margin-bottom: 30px;
+margin-top: 0px;
+}
+
+.body_content .button
+{
+background-color: #FFFFFF;
+color: #FF5722;
+font-size: 18px;
+font-weight: bold;
+padding: 10px 20px;
+border: none;
+border-radius: 50px;
+text-decoration: none;
+cursor: pointer;
+}
+
+.body_content .button:hover
+{
+background-color: #FF9800;
+color: #FFFFFF;
+}
+
+body.success .body_content .button
+{
+background-color: #FFFFFF;
+color: #8BC34A;
+}
+
+body.success .body_content .button:hover
+{
+background-color: #CDDC39;
+color: #FFFFFF;
+}
+
+body.error
+{
+background: linear-gradient(-45deg, #FF9800, #ff1100, #FF5722, #FF9800);
+background-size: 400% 400%;
+animation: gradientAnimation 15s ease infinite;
+}
+
+body.success
+{
+background: linear-gradient(45deg, #8BC34A, #4CAF50, #FFEB3B);
+background-size: 400% 400%;
+animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation
+{
+0%
+{
+background-position: 0% 50%;
+}
+
+50%
+{
+background-position: 100% 50%;
+}
+
+100%
+{
+background-position: 0% 50%;
+}
+}
+
+body.error > .preloader,
+body.success  > .preloader
+{
+display: none;
+}
+
+body.error > .body_content,
+body.success  > .body_content
+{
+display: block;
+}
+
+@keyframes gradient
+{
+0%
+{
+background-position: 0% 50%;
+}
+
+50%
+{
+background-position: 100% 50%;
+}
+
+100%
+{
+background-position: 0% 50%;
+}
+}
+
+.preloader
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.ripple-background
+{
+position: absolute;
+z-index: -1;
+opacity: 0.2;
+}
+
+.preloader .circle
+{
+position: absolute;
+border-radius: 50%;
+background: white;
+animation: ripple 15s infinite;
+}
+
+.preloader .small
+{
+width: 200px;
+height: 200px;
+left: -100px;
+bottom: -100px;
+}
+
+.preloader .medium
+{
+width: 400px;
+height: 400px;
+left: -200px;
+bottom: -200px;
+}
+
+.preloader .large
+{
+width: 600px;
+height: 600px;
+left: -300px;
+bottom: -300px;
+}
+
+.preloader .xlarge
+{
+width: 800px;
+height: 800px;
+left: -400px;
+bottom: -400px;
+}
+
+.preloader .xxlarge
+{
+width: 1000px;
+height: 1000px;
+left: -500px;
+bottom: -500px;
+}
+
+.preloader .shade1
+{
+opacity: 0.2;
+}
+
+.preloader .shade2
+{
+opacity: 0.5;
+}
+
+.preloader .shade3
+{
+opacity: 0.7;
+}
+
+.preloader .shade4
+{
+opacity: 0.8;
+}
+
+.preloader .shade5
+{
+opacity: 0.9;
+}
+
+@keyframes ripple
+{
+0%
+{
+transform: scale(0.8);
+}
+
+50%
+{
+transform: scale(1.2);
+}
+
+100%
+{
+transform: scale(0.8);
+}
+}
+
+.preloader .loading-text
+{
+color: transparent;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+margin-bottom: 10px;
+background: linear-gradient(to right, #FFEB3B 20%, #ffffff 40%, #CDDC39 60%, #FFEB3B 80%);
+background-size: 200% auto;
+background-clip: text;
+-webkit-background-clip: text;
+animation: text-animation 1s linear infinite;
+}
+
+@keyframes text-animation
+{
+to
+{
+background-position: 200% center;
+}
+}
+
+@keyframes subtitle-animation
+{
+0%
+{
+opacity: 0;
+transform: scale(0.9);
+}
+
+50%
+{
+opacity: 1;
+transform: scale(1);
+}
+
+100%
+{
+opacity: 0;
+transform: scale(0.9);
+}
+}
+
+.preloader .subtitle
+{
+color: white;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 22px;
+animation: subtitle-animation 2s ease-in-out infinite;
+}

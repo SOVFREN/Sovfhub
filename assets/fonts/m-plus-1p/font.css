@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'mplus';
+  font-style:  normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("mplus1p-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'mplus';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("mplus1p-bold.woff") format("woff");
+}
+
+body {
+  font-family: 'mplus';
+}
