@@ -1,0 +1,1 @@
+importScripts('https://sovfhub.com/pwa-sw.js');
