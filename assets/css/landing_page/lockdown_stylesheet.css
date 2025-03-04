@@ -1,0 +1,11 @@
+.frequently_asked_questions .questions>.item>.question:after
+{
+background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23888' d='M511.999 771.854c-16.34 0-32.678-6.239-45.134-18.692l-392.021-392.025c-24.937-24.937-24.937-65.37 0-90.297 24.929-24.929 65.351-24.929 90.29 0l346.864 346.887 346.867-346.873c24.937-24.929 65.358-24.929 90.284 0 24.95 24.929 24.95 65.36 0 90.297l-392.014 392.025c-12.463 12.455-28.801 18.679-45.134 18.679z'%3E%3C/path%3E%3C/svg%3E%0A");
+color: transparent;
+}
+
+.frequently_asked_questions .questions>.item.open>.question:after
+{
+background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23888' d='M512.001 252.146c16.34 0 32.678 6.239 45.134 18.692l392.021 392.025c24.937 24.937 24.937 65.37 0 90.297-24.929 24.929-65.351 24.929-90.29 0l-346.864-346.887-346.867 346.873c-24.937 24.929-65.358 24.929-90.284 0-24.95-24.929-24.95-65.36 0-90.297l392.014-392.025c12.463-12.455 28.801-18.679 45.134-18.679z'%3E%3C/path%3E%3C/svg%3E%0A");
+color: transparent;
+}

@@ -1,0 +1,5 @@
+<?php 
+array_push($url_blacklist,
+"https://sampledomain.com/*",
+"https://www.facebook.com/*",
+);
