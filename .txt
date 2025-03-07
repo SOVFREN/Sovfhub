@@ -1,1 +1,1 @@
-This is a text file for testing purposes. I want to make sure it works
+test number 3
